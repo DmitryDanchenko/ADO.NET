@@ -150,7 +150,7 @@ namespace TestDataTable
                 imageration.Save(stream, ImageFormat.Jpeg);
                 stream.Flush();
                 stream.Seek(0, SeekOrigin.Begin);
-                return reader.ReadByte(int)stream.Length);
+                return reader.ReadBytes((int)stream.Length));
             }
         }
 
